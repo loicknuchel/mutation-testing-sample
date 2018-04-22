@@ -1,4 +1,8 @@
 .idea/
+javascript/node_modules/
+javascript/coverage/
+javascript/yarn-error.log
+javascript/npm-debug.log
 scala/target/
 scala/project/target/
 scala/project/project/target/
