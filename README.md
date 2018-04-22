@@ -1,3 +1,5 @@
 # Mutation testing samples
 
-This repo showcase how to use mutation testing in multiple languages
+This repo showcase how to use mutation testing in multiple languages :
+
+- [Scala](scala)
