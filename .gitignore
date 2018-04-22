@@ -1,4 +1,5 @@
 .idea/
+java/target/
 javascript/node_modules/
 javascript/coverage/
 javascript/reports/
