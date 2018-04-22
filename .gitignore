@@ -1,6 +1,7 @@
 .idea/
 javascript/node_modules/
 javascript/coverage/
+javascript/reports/
 javascript/yarn-error.log
 javascript/npm-debug.log
 scala/target/
