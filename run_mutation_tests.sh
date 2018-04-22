@@ -5,3 +5,6 @@ cd scala/
 
 cd ../javascript/
 ./run_mutation_tests.sh
+
+cd ../java/
+./run_mutation_tests.sh
