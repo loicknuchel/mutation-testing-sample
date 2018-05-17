@@ -1,0 +1,243 @@
+
+
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        @import url(&#x27;https://fonts.googleapis.com/css?family=Fira+Mono|Raleway&#x27;);
+
+html,
+body,
+div,
+span,
+p,
+blockquote,
+pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.meter {
+    height: 16px;
+    position: relative;
+    background: #BB2020;
+}
+.meter span {
+    display: block;
+    height: 100%;
+    background-color: rgb(43, 194, 83);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(43, 194, 83)), color-stop(1, rgb(84, 240, 84)));
+    background-image: -webkit-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    background-image: -moz-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    background-image: -ms-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    background-image: -o-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+.popover {
+  max-width: 100%;
+}
+.popover-content {
+  font-size: 15px;
+  font-family: Fira Code, Fira Mono, monospace;
+}
+th {
+    text-align: left;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+    font-family: Raleway, sans-serif;
+}
+code, pre {
+    font-family: Fira Mono, monospace;
+}
+alert { 
+    border: 0;
+    border-radius: 0;
+}
+.src {
+    padding: 0;
+}
+.hljs {
+    padding: 1px;
+}
+.covered {
+    background-color: #aaffaa
+}
+.uncovered {
+    background-color: #ffaaaa
+}
+.na {
+    background-color: #f8f8f8
+}
+.killed {
+    background-color: #aaffaa
+}
+.no_coverage {
+    background-color: #ffaaaa
+}
+.alive {
+    background-color: #ffaaaa
+}
+.failure {
+    background-color: #FFFF4D;
+}
+.timed_out {
+    background-color: #FFFF4D;
+}
+.oom {
+    background-color: #FFFF4D;
+}
+.untested {
+    background-color: #FFFF4D
+}
+.mono {
+    font-family: Fira Mono, monospace;
+}
+
+    </style>
+</head>
+<body>
+<div class="alert alert-info">
+    <strong>
+        Scalamu Mutation Analysis Report
+    </strong>
+    generated at
+    Tue May 08 19:18:14 CEST 2018
+</div>
+
+<h1 class="display-4">Package Overview</h1>
+<h3 class="mono">org.mutationtesting.demo</h3>
+<table class="table">
+    <tr>
+        <td>
+            Total Statements:
+        </td>
+        <td>
+            43
+        </td>
+        <td>
+            Invoked Statements:
+        </td>
+        <td>
+            20
+        </td>
+        <td>Statement Coverage:</td>
+        <td style="width: 20%">
+            <div class="meter">
+                <span style="width: 46.5%"></span>
+            </div>
+        </td>
+        <td>46.5%</td>
+        
+    </tr>
+    <tr>
+        <td>
+            Total Mutants:
+        </td>
+        <td>
+            36
+        </td>
+        <td>
+            Mutants Killed:
+        </td>
+        <td>
+            12
+        </td>
+        <td>Mutation Coverage:</td>
+        <td style="width: 20%">
+            <div class="meter">
+                <span style="width: 33.3%"></span>
+            </div>
+        </td>
+        <td>33.3%</td>
+    </tr>
+</table>
+
+<h3>Breakdown by File</h3>
+<table class="table table-hover" style="font-size:13px">
+    <thead>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Total Statements
+        </th>
+        <th>
+            Invoked
+        </th>
+        <th>
+            Statement Coverage
+        </th>
+        <th>
+        </th>
+        <th>
+            Total Mutants
+        </th>
+        <th>
+            Killed
+        </th>
+        <th>
+            Mutation Coverage
+        </th>
+        <th>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+
+    
+    <tr>
+        <td>
+            <a href="Demo.scala.html" class="mono">Demo.scala</a>
+        </td>
+        <td>
+            43
+        </td>
+        <td>
+            20
+        </td>
+        <td>
+            <div class="meter">
+                <span style="width: 46.5%"></span>
+            </div>
+        </td>
+        <td>
+            46.5%
+        </td>
+        <td>
+            36
+        </td>
+        <td>
+            12
+        </td>
+        <td>
+            <div class="meter">
+                <span style="width: 33.3%"></span>
+            </div>
+        </td>
+        <td>
+            33.3%
+        </td>
+    </tr>
+    
+
+    </tbody>
+</table>
+
+</body>
+</html>

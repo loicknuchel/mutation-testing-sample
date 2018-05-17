@@ -1,0 +1,1061 @@
+
+
+<html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/languages/scala.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/github.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        @import url(&#x27;https://fonts.googleapis.com/css?family=Fira+Mono|Raleway&#x27;);
+
+html,
+body,
+div,
+span,
+p,
+blockquote,
+pre {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+.meter {
+    height: 16px;
+    position: relative;
+    background: #BB2020;
+}
+.meter span {
+    display: block;
+    height: 100%;
+    background-color: rgb(43, 194, 83);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(43, 194, 83)), color-stop(1, rgb(84, 240, 84)));
+    background-image: -webkit-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    background-image: -moz-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    background-image: -ms-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    background-image: -o-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+.popover {
+  max-width: 100%;
+}
+.popover-content {
+  font-size: 15px;
+  font-family: Fira Code, Fira Mono, monospace;
+}
+th {
+    text-align: left;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+    font-family: Raleway, sans-serif;
+}
+code, pre {
+    font-family: Fira Mono, monospace;
+}
+alert { 
+    border: 0;
+    border-radius: 0;
+}
+.src {
+    padding: 0;
+}
+.hljs {
+    padding: 1px;
+}
+.covered {
+    background-color: #aaffaa
+}
+.uncovered {
+    background-color: #ffaaaa
+}
+.na {
+    background-color: #f8f8f8
+}
+.killed {
+    background-color: #aaffaa
+}
+.no_coverage {
+    background-color: #ffaaaa
+}
+.alive {
+    background-color: #ffaaaa
+}
+.failure {
+    background-color: #FFFF4D;
+}
+.timed_out {
+    background-color: #FFFF4D;
+}
+.oom {
+    background-color: #FFFF4D;
+}
+.untested {
+    background-color: #FFFF4D
+}
+.mono {
+    font-family: Fira Mono, monospace;
+}
+
+    </style>
+</head>
+<body>
+<div class="alert alert-info">
+    <strong>Demo.scala</strong>
+</div>
+
+<table class="src" style="font-size:13px">
+    
+    
+    <tr id="line1">
+        <td class=na>
+            1
+        </td>
+        <td class="na">
+            <a href="#group1"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">package org.mutationtesting.demo </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line2">
+        <td class=na>
+            2
+        </td>
+        <td class="na">
+            <a href="#group2"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na"> </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line3">
+        <td class=na>
+            3
+        </td>
+        <td class="na">
+            <a href="#group3"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">object Demo { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line4">
+        <td class=na>
+            4
+        </td>
+        <td class="na">
+            <a href="#group4"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">  def getPrice(prices: Seq[Double]): Double = { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line5">
+        <td class=na>
+            5
+        </td>
+        <td class="na">
+            <a href="#group5"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    val total = sum(prices) </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line6">
+        <td class=na>
+            6
+        </td>
+        <td class="na">
+            <a href="#group6"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    var disount = 0.0 </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line7">
+        <td class=uncovered>
+            7
+        </td>
+        <td class="uncovered">
+            <a href="#group7"><b>4</b></a>
+        </td>
+        <td width="99%" class="uncovered">
+            <pre><code class="scala uncovered">    if(total &gt;= 50) { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line8">
+        <td class=covered>
+            8
+        </td>
+        <td class="covered">
+            <a href="#group8"><b>2</b></a>
+        </td>
+        <td width="99%" class="covered">
+            <pre><code class="scala covered">      disount = total * 0.1 </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line9">
+        <td class=na>
+            9
+        </td>
+        <td class="na">
+            <a href="#group9"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line10">
+        <td class=uncovered>
+            10
+        </td>
+        <td class="uncovered">
+            <a href="#group10"><b>4</b></a>
+        </td>
+        <td width="99%" class="uncovered">
+            <pre><code class="scala uncovered">    if(prices.length &gt;= 5) { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line11">
+        <td class=na>
+            11
+        </td>
+        <td class="na">
+            <a href="#group11"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">      val minPrice = min(prices) </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line12">
+        <td class=uncovered>
+            12
+        </td>
+        <td class="uncovered">
+            <a href="#group12"><b>4</b></a>
+        </td>
+        <td width="99%" class="uncovered">
+            <pre><code class="scala uncovered">      if(minPrice &gt; disount) { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line13">
+        <td class=na>
+            13
+        </td>
+        <td class="na">
+            <a href="#group13"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">        disount = minPrice </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line14">
+        <td class=na>
+            14
+        </td>
+        <td class="na">
+            <a href="#group14"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">      } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line15">
+        <td class=na>
+            15
+        </td>
+        <td class="na">
+            <a href="#group15"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line16">
+        <td class=covered>
+            16
+        </td>
+        <td class="covered">
+            <a href="#group16"><b>2</b></a>
+        </td>
+        <td width="99%" class="covered">
+            <pre><code class="scala covered">    total - disount </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line17">
+        <td class=na>
+            17
+        </td>
+        <td class="na">
+            <a href="#group17"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">  } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line18">
+        <td class=na>
+            18
+        </td>
+        <td class="na">
+            <a href="#group18"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na"> </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line19">
+        <td class=na>
+            19
+        </td>
+        <td class="na">
+            <a href="#group19"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">  private def sum(values: Seq[Double]): Double = { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line20">
+        <td class=na>
+            20
+        </td>
+        <td class="na">
+            <a href="#group20"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    var sum = 0.0 </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line21">
+        <td class=na>
+            21
+        </td>
+        <td class="na">
+            <a href="#group21"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    var i = 0 </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line22">
+        <td class=covered>
+            22
+        </td>
+        <td class="covered">
+            <a href="#group22"><b>5</b></a>
+        </td>
+        <td width="99%" class="covered">
+            <pre><code class="scala covered">    while(i &lt; values.length) { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line23">
+        <td class=covered>
+            23
+        </td>
+        <td class="covered">
+            <a href="#group23"><b>2</b></a>
+        </td>
+        <td width="99%" class="covered">
+            <pre><code class="scala covered">      sum = sum + values(i) </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line24">
+        <td class=uncovered>
+            24
+        </td>
+        <td class="uncovered">
+            <a href="#group24"><b>2</b></a>
+        </td>
+        <td width="99%" class="uncovered">
+            <pre><code class="scala uncovered">      i = i + 1 </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line25">
+        <td class=na>
+            25
+        </td>
+        <td class="na">
+            <a href="#group25"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line26">
+        <td class=na>
+            26
+        </td>
+        <td class="na">
+            <a href="#group26"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    sum </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line27">
+        <td class=na>
+            27
+        </td>
+        <td class="na">
+            <a href="#group27"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">  } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line28">
+        <td class=na>
+            28
+        </td>
+        <td class="na">
+            <a href="#group28"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na"> </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line29">
+        <td class=na>
+            29
+        </td>
+        <td class="na">
+            <a href="#group29"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">  private def min(values: Seq[Double]): Double = { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line30">
+        <td class=na>
+            30
+        </td>
+        <td class="na">
+            <a href="#group30"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    var result = values.head </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line31">
+        <td class=na>
+            31
+        </td>
+        <td class="na">
+            <a href="#group31"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    var i = 1 </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line32">
+        <td class=uncovered>
+            32
+        </td>
+        <td class="uncovered">
+            <a href="#group32"><b>5</b></a>
+        </td>
+        <td width="99%" class="uncovered">
+            <pre><code class="scala uncovered">    while(i &lt; values.length) { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line33">
+        <td class=uncovered>
+            33
+        </td>
+        <td class="uncovered">
+            <a href="#group33"><b>4</b></a>
+        </td>
+        <td width="99%" class="uncovered">
+            <pre><code class="scala uncovered">      if(result &gt; values(i)) { </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line34">
+        <td class=na>
+            34
+        </td>
+        <td class="na">
+            <a href="#group34"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">        result = values(i) </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line35">
+        <td class=na>
+            35
+        </td>
+        <td class="na">
+            <a href="#group35"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">      } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line36">
+        <td class=uncovered>
+            36
+        </td>
+        <td class="uncovered">
+            <a href="#group36"><b>2</b></a>
+        </td>
+        <td width="99%" class="uncovered">
+            <pre><code class="scala uncovered">      i = i + 1 </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line37">
+        <td class=na>
+            37
+        </td>
+        <td class="na">
+            <a href="#group37"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line38">
+        <td class=na>
+            38
+        </td>
+        <td class="na">
+            <a href="#group38"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">    result </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line39">
+        <td class=na>
+            39
+        </td>
+        <td class="na">
+            <a href="#group39"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">  } </code></pre>
+        </td>
+    </tr>
+    
+    <tr id="line40">
+        <td class=na>
+            40
+        </td>
+        <td class="na">
+            <a href="#group40"><b></b></a>
+        </td>
+        <td width="99%" class="na">
+            <pre><code class="scala na">} </code></pre>
+        </td>
+    </tr>
+    
+</table>
+
+<h2>Mutants</h2>
+<table class="src" cellpadding="3px">
+    
+    <tr>
+        <td>
+            <a href="#line7" id="group7">7</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.&gt;=(50)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;total.&lt;(50)&lt;/code&gt;&lt;/pre&gt;
+     ">Negated conditional operator                       -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.&gt;=(50)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;true&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;then&quot; branch        -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="alive mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.&gt;=(50)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;total.&gt;(50)&lt;/code&gt;&lt;/pre&gt;
+     ">Modified conditional boundary                      -&gt; Alive</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.&gt;=(50)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;false&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;else&quot; branch        -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line8" id="group8">8</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.*(0.1)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;total&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced expression, typed A =&gt; A, with its lhs    -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.*(0.1)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;total./(0.1)&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced math operator                             -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line10" id="group10">10</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;prices.length.&gt;=(5)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;prices.length.&lt;(5)&lt;/code&gt;&lt;/pre&gt;
+     ">Negated conditional operator                       -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="alive mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;prices.length.&gt;=(5)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;prices.length.&gt;(5)&lt;/code&gt;&lt;/pre&gt;
+     ">Modified conditional boundary                      -&gt; Alive</pre>
+            
+                <pre class="alive mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;prices.length.&gt;=(5)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;false&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;else&quot; branch        -&gt; Alive</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;prices.length.&gt;=(5)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;true&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;then&quot; branch        -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line12" id="group12">12</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;minPrice.&gt;(disount)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;minPrice.&lt;=(disount)&lt;/code&gt;&lt;/pre&gt;
+     ">Negated conditional operator                       -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;minPrice.&gt;(disount)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;false&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;else&quot; branch        -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;minPrice.&gt;(disount)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;true&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;then&quot; branch        -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;minPrice.&gt;(disount)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;minPrice.&gt;=(disount)&lt;/code&gt;&lt;/pre&gt;
+     ">Modified conditional boundary                      -&gt; NoTestCoverage</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line16" id="group16">16</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.-(disount)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;total&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced expression, typed A =&gt; A, with its lhs    -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;total.-(disount)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;total.+(disount)&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced math operator                             -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line22" id="group22">22</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i.&gt;=(values.length)&lt;/code&gt;&lt;/pre&gt;
+     ">Negated conditional operator                       -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;true&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;then&quot; branch        -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i.&lt;=(values.length)&lt;/code&gt;&lt;/pre&gt;
+     ">Modified conditional boundary                      -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;while$1()&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;()&lt;/code&gt;&lt;/pre&gt;
+     ">Removed method call with Unit return type          -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;false&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;else&quot; branch        -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line23" id="group23">23</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;sum.+(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;sum.-(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced math operator                             -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;sum.+(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;sum&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced expression, typed A =&gt; A, with its lhs    -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line24" id="group24">24</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="timed_out mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.+(1)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced expression, typed A =&gt; A, with its lhs    -&gt; TimedOut</pre>
+            
+                <pre class="killed mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.+(1)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i.-(1)&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced math operator                             -&gt; Killed by org.mutationtesting.demo.DemoSpec</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line32" id="group32">32</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i.&gt;=(values.length)&lt;/code&gt;&lt;/pre&gt;
+     ">Negated conditional operator                       -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;while$2()&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;()&lt;/code&gt;&lt;/pre&gt;
+     ">Removed method call with Unit return type          -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;false&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;else&quot; branch        -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;true&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;then&quot; branch        -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.&lt;(values.length)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i.&lt;=(values.length)&lt;/code&gt;&lt;/pre&gt;
+     ">Modified conditional boundary                      -&gt; NoTestCoverage</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line33" id="group33">33</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;result.&gt;(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;true&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;then&quot; branch        -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;result.&gt;(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;result.&lt;=(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+     ">Negated conditional operator                       -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;result.&gt;(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;result.&gt;=(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+     ">Modified conditional boundary                      -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;result.&gt;(values.apply(i))&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;false&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced conditional with its &quot;else&quot; branch        -&gt; NoTestCoverage</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+    <tr>
+        <td>
+            <a href="#line36" id="group36">36</a>
+        </td>
+        <td width="99%">
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.+(1)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i.-(1)&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced math operator                             -&gt; NoTestCoverage</pre>
+            
+                <pre class="no_coverage mutant" data-toggle="popover" 
+                     data-placement="auto top" data-html="true" 
+                     title="Mutation" data-trigger="hover" 
+                     data-content="
+Original: &lt;pre&gt;&lt;code&gt;i.+(1)&lt;/code&gt;&lt;/pre&gt;
+&lt;br&gt;
+Mutated: &lt;pre&gt;&lt;code&gt;i&lt;/code&gt;&lt;/pre&gt;
+     ">Replaced expression, typed A =&gt; A, with its lhs    -&gt; NoTestCoverage</pre>
+            
+        </td>
+    </tr>
+    <tr></tr>
+    
+</table>
+
+<h2>Examined tests</h2>
+<ol>
+    
+      <li class="mono" style="white-space:pre;">ScalaTest test: org.mutationtesting.demo.DemoSpec</li>
+    
+</ol>
+<br/>
+
+<script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover({ container: 'body' });
+    });
+</script>
+
+</body>
+</html>
